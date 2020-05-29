@@ -14,3 +14,5 @@ class Burgers {
         }
     }
 }
+
+module.exports = Burgers
