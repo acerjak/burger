@@ -1,8 +1,10 @@
-//bring in dotenv
-require('dotenv').config()
 // bring in express
 const express = require('express')
+
 const app = express()
+
+//bring in dotenv
+require('dotenv').config()
 
 //bring in middleware
 const { join } = require('path')
