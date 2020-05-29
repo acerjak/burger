@@ -14,7 +14,7 @@ const orm = {
     })
 },
     updateOne (table, changes, where, cb) {
-        db.query(`UPDATE burger SET ? WHERE ?`, where, (err, info) => {
+        db.query(`UPDATE burger SET ? WHERE ?`, [changes, where], (err, info) => {
             if (err) { console.log(err) }
             cb(info)
     })

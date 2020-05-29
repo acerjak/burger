@@ -10,7 +10,7 @@ router.post('/burgers', (req, res) => Burger
     .insertOne(req.body, info => res.json(info)))
 
 //PUT one burger
-router.put('/burgers', (req, res) => Burger 
+router.put('/burgers/:id', (req, res) => Burger 
     .updateOne(req.body, { id: req.params.id }, info => res.json(info)))
 
 module.exports = router
