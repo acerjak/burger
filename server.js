@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
 //bring in routes
-app.use(require('./controllers/index'))
+app.use(require('./controllers/index.js'))
 
 //listen for server
 app.listen(process.env.PORT || 3000, () => console.log('http://localhost:3000'))

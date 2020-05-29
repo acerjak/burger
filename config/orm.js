@@ -1,22 +1,22 @@
-const db = require('../db')
+const db = require('./connection.js')
 
 const orm = {
     selectAll (table, cb){
-        db.query(`SELECT * FROM burgers`, (err, burgers) => {
+        db.query(`SELECT * FROM ${table}`, (err, data) => {
         if (err) { console.log(err) }
         cb(data)
     })
 },
-    insertOne (table, where, cb) {
-        db.query(`INSERT INTO burgers SET ?`, data, (err, info) => {
+    insertOne (table, data, cb) {
+        db.query(`INSERT INTO ${table} SET ?`, data, (err, info) => {
         if (err) { console.log(err) }
-        db(data)
+        cb(info)
     })
 },
     updateOne (table, changes, where, cb) {
-        db.query(`UPDATE burger SET ? WHERE ?`, [changes, where], (err, info) => {
-            if (err) { console.log(err) }
-            cb(info)
+        db.query(`UPDATE ${table} SET ? WHERE ?`, [changes, where], (err, info) => {
+        if (err) { console.log(err) }
+        cb(info)
     })
 }
 

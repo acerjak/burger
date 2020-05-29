@@ -2,7 +2,7 @@ const orm = require('../config/orm')
 
 module.exports = {
     selectAll (cb) {
-        orm.getAll('burgers', where, burgers => cb(burgers))
+        orm.getAll('burgers', burgers => cb(burgers))
     },
     insertOne (burger, cb) {
         orm.createOne('burgers', burger, info => cb(info))
