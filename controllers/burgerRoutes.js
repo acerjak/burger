@@ -13,5 +13,4 @@ router.post('/burgers', (req, res) => Burger
 router.put('/burgers', (req, res) => Burger 
     .updateOne(req.body, { id: req.params.id }, info => res.json(info)))
 
-
 module.exports = router
