@@ -1,10 +1,7 @@
-// bring in express
-// const express = require('express')
-// const orm = require('../config/orm')
+// bring in express router
 const router = require('express').Router()
+// bring in models
 const { Burger } = require('../models')
-
-// const burger = new Burgers()
 
 //GET all burgers
 router.get('/burgers', (req, res) => Burger

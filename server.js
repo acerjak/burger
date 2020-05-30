@@ -13,12 +13,12 @@ app.set('view engine', '.hbs')
 require('dotenv').config()
 
 //middleware to help serve all front end
-app.use(express.static(join(__dirname, '/public/')))
+app.use(express.static(join(__dirname,'/public/')))
 //to accept json
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-//bring in routes
+//bring in routes from controllers index
 app.use(require('./controllers/index.js'))
 
 //app to listen on port and show URL

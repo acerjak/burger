@@ -1,3 +1,25 @@
-h1 {
-    color: red;
+/* .burgerTitle {
+    text-align: center;
+}; */
+body{
+    text-align: center;
+    background-color: rgb(147, 85, 206);
+  }
+
+.notDevoured {
+    float: left;
+    background-color: azure;
+    width: 25%;
+}
+.devoured {
+    float: right;
+    background-color: azure;
+    width: 25%;
+}
+.formDiv {
+    text-align: center;
+}
+.burgerImg {
+    width: 25%;
+    height: 25%;
 }

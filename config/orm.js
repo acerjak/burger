@@ -1,3 +1,4 @@
+//bring in database for queries
 const db = require('./connection.js')
 
 module.exports = {
