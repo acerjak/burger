@@ -11,7 +11,7 @@ document.getElementById('addBurger').addEventListener('click', event => {
             // burgerElem.classList.add('notDevoured')
             burgerElem.innerHTML = `
             ${document.getElementById('burgerName').value}
-            <button class="devour" data-id="${data.insertedId}">Devour</button>
+            <button id="devour" data-id="${data.insertedId}">Devour</button>
             `
             // append element onto burger list
             document.getElementById('burgersList').append(burgerElem)
@@ -19,12 +19,25 @@ document.getElementById('addBurger').addEventListener('click', event => {
     .catch(err => console.error(err))
 })  
 
+// document.getElementById('devour').addEventListener('click', event => {
+//     if (event.target.className === 'devour') {
+//     axios.put(`/api/burgers/${event.target.dataset.id}`, {devoured: 1})
+//       .then(({ data }) => {
+//         const nomElem = document.createElement('li')
+//         nomElem.innerHTML = `
+//         ${event.target.value}`
+//         document.getElementById('devoured').append(nomElem)
+//       })
+//       .catch(err => console.log(err))
+//     }
+// })
+
 document.getElementById('devour').addEventListener('click', event => {
-    event.preventDefault()
-    axios.put('api/burgers', {
-        
-    })
+    
 })
+
+
+
 // const getBurgers = () => {
 //     axios.get('/api/burgers')
 //     .then(({data}) => {
