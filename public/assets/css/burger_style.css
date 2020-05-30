@@ -15,6 +15,7 @@ li{
     width: 25%;
 }
 .devoured {
+    text-align: center;
     float: right;
     background-color: azure;
     width: 25%;
