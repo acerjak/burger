@@ -1,9 +1,23 @@
 <h1>Eat Da Burger</h1>
 
-<form>
+
+<div class="burger" id="burger">
+  {{#each burgers}}
+</div>
+    {{this.burger_name}}
+<button id="devour" data-id="{{this.id}}">Devour</button>
+  {{/each}}
+
+
+
+<form id="main">
   <p>
-    <label for="title">Title</label>
-    <input type="text" name="title" id="title" placeholder="Enter your burger choice here">
+    <label for="title">Enter a Burger:</label>
+    <input type="text" name="burgerInput" id="burgerInput" placeholder="NOM NOM NOM NOM NOM">
   </p>
-  <button id="addGame">Add Burger</button>
+  <button id="addBurger">Add Burger</button>
+  <p id="description">Add a burger, then get to eating!</p>
 </form>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+{{!-- <script src="../public/index.js"></script> --}}

@@ -1,13 +1,13 @@
 const db = require('./connection.js')
 
-const orm = {
-    selectAll (table, cb){
+module.exports = {
+    getAll (table, cb) {
         db.query(`SELECT * FROM ${table}`, (err, data) => {
         if (err) { console.log(err) }
         cb(data)
     })
 },
-    insertOne (table, data, cb) {
+    createOne (table, data, cb) {
         db.query(`INSERT INTO ${table} SET ?`, data, (err, info) => {
         if (err) { console.log(err) }
         cb(info)
@@ -21,6 +21,4 @@ const orm = {
 }
 
 }
-
-module.exports = orm
 
