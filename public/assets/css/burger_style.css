@@ -1,12 +1,15 @@
-/* .burgerTitle {
+.burgerTitle{
     text-align: center;
-}; */
+}
 body{
-    text-align: center;
     background-color: rgb(147, 85, 206);
   }
-
+li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 .notDevoured {
+    align-content: left;
     float: left;
     background-color: azure;
     width: 25%;
@@ -16,10 +19,13 @@ body{
     background-color: azure;
     width: 25%;
 }
-.formDiv {
+.formDiv{
     text-align: center;
 }
 .burgerImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 25%;
     height: 25%;
 }
