@@ -12,7 +12,7 @@
 #### Please follow this command to install npm dependencies:
 > npm i
 #### Please use this link to go to the application:
-> ENTER LINK HERE FROM HEROKU
+> [heroku](https://glacial-springs-08945.herokuapp.com/ "Heroku Deployed Site")
 ## Usage
 > This application is just a fun way to eat all kinds of burgers minus the calories.
 ## Credits
